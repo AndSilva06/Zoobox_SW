@@ -1,0 +1,20 @@
+﻿@model ZooboxApplication.Models.Specie
+
+@{
+    ViewData["Title"] = "Informação";
+    Layout = "/Views/Shared/_LayoutPrint.cshtml";
+}
+
+
+<div>
+    <h4>Espécie Animal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SpecieName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SpecieName)
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,19 @@
+﻿@model ZooboxApplication.Models.Race
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "/Views/Shared/_LayoutPrint.cshtml";
+}
+
+<div>
+    <h4>Raça animal </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RaceName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RaceName)
+        </dd>
+    </dl>
+</div>

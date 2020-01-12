@@ -1,0 +1,57 @@
+﻿@model ZooboxApplication.Models.Animal
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Tem a certeza que pretende eliminar?</h3>
+<div>
+    <h4>Animal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RaceName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RaceName.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiseaseName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiseaseName.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EntranceDay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EntranceDay)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Statename)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Statename.Id)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-default" /> |
+        <a asp-action="Index">Voltar</a>
+    </form>
+</div>
